@@ -3,50 +3,142 @@ Colors to use:
 dark blue: #06365f
 light blue: #1c5380
 */
+*{
+  box-sizing: border-box;
+}
 
 body {
   font: 200 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+
   margin: 0;
-  height: 800px;
+  height: 600px;
 
-  /* background: linear-gradient(180deg, #1c5380, #1c5380 25%),
-              linear-gradient(180deg, #06365f, #06365f 25%),
-              linear-gradient(180deg, white, white 50%); */
-  /* background: linear-gradient(to bottom, #567d9f,#386185 30% , white 50%);  */
-  background: linear-gradient(180deg, #577ea0 , #396287 40%, white 40% 100%);
-  background-repeat: no-repeat;   
-  
-
-  border-bottom:2px dotted red;    
-
+  background-image: url(/images/bgtile.png);
+  background-repeat: repeat-x; 
+  background-size: 0.8px;
 }
 
+
+
 .main{
-  width: 90%;
-  height: 80%;
-  border: 3px dotted aqua;
-  margin: 0 auto;
+  width: 80%;
+  height: 70%;
+
+  margin: 70px auto 10px;
 
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .phone{
-  width: 30%;
-  height: 80%;
-  border: 3px dotted green;
+  width: 37%;
+  height: 100%;
 }
 
 .all{
-  width: 60%;
-  height: 80%;
-  border: 3px dotted green;
+  width: 57%;
+  height: 100%;
 }
+
+.title{
+  width: 100%;
+  height: 15%;
+
+  margin-top: 10px;
+  margin-bottom: 20px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand{
+  height: 63px;
+}
+
+.login{
+  width: 23%;
+  height: 60%;
+
+  background-color: #507ba1;
+  box-shadow: 0 0px 3px #182531;
+  border-radius: 2px;
+
+  margin-right: 7px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.login a{
+  color : white;
+  text-decoration:  none;
+  font-weight: 400;
+  font-size: 0.85rem;
+}
+
+.description{
+  width: 100%;
+  height: 65%;
+
+  background-image: url(/images/frame.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  padding: 5px 25px;
+
+}
+
+span{
+  font-weight: bold;
+}
+
+h1{
+  color: #06365f;
+  font-size: 1.25rem;
+}
+
+p{
+  font-size: 0.86rem;
+}
+
+
+.store{
+  position: relative;
+  left: 20px;
+  top: 7px
+}
+
+.store img{
+  height: 43px;
+}
+
 
 footer{
   height: 100px;
   width: 60%;
-  border: 3px dotted tomato;
+  
   margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer a {
+  text-decoration: none;
+  color: #1c5380;
+
+  font-size: 0.6rem;
+  font-weight: 500;
+}
+
+footer p{
+  color : rgb(196, 192, 192);
+  font-weight: 500;
+  font-size: 0.6rem;
 }
